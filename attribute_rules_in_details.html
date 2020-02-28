@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -19,51 +19,60 @@
           <a href="list_of_all_html_rules.html">Go back to the list html5 rules</a>
         </li>
         <li>
-          <a href="homepage.html">←←Home</a>
+          <a href="index.html">←←Home</a>
         </li>
       </ul>
     </nav>
     <main>
       <section>
         <h2>
-          Name.
+          Fundamental attribute rules.
         </h2>
         <ul>
           <li>
-            Name attribute must be lowercase
-          </li>
-          <li>
-            No double quotes inside of double quotes
-          </li>
-          <li>
-            No space in attribute names.
-          </li>
-          <li>
             Attribute must have name value pairs.
-          </li>
-          <li>
-            Most tags have their own attribute.
-          </li>
-          <li>
-            Class attribute is for public, define by users.
-          </li>
-          <li>
-            Id attribute is for identity, define by users
-          </li>
-          <li>
-            The attribute title is used rarely . It adds a title to every element's content.
-          </li>
-          <li>
-            width attribute has numerical value.
-          </li>
-          <li>
-            Height attribute has numerical value.
           </li>
           <li>
             Be clear about the attribute functions.
           </li>
           <li>
-            Don't double boolleans attribute.
+            Class attribute is for public, define by users.
+          </li>
+          <li>
+            Don't double booleans attribute.
+          </li>
+          <li>
+            Id attribute is for identity, define by users
+          </li>
+          <li>
+            Most tags have their own attribute.
+          </li>
+          <li>
+            Height attribute has numerical value.
+          </li>
+          <li>
+            Name attribute must be lowercase.<br> 
+              <em>Do not do this</em>
+              &lt;option value="HELLO"&gt;Hello<br>
+            <em> Do this</em>
+            &lt;option value="hello"&gt;Hello<br>
+          </li>
+          <li>
+            No double quotes inside of double quotes.<br>
+              <em>Do not do this</em>
+              &lt;input type=""text""&gt;<br>
+              <em>Do this</em>
+              &lt;input type="text"&gt;
+          </li>
+          <li>
+            No space in attribute names, instaed use underscores or dashes.<br>
+            <em>Do not do this</em>
+            &lt;input type="text" name="artist name"&gt;<br>
+            <em>Do this</em>
+            &lt;input type="text" name="artist_name"&gt;
+          </li>
+          <li>
+            width attribute has numerical value.
           </li>
           <li>
             Remove empty attributes
@@ -71,38 +80,41 @@
           <li>
             Sort class names.
           </li>
+          <li>
+            The attribute title is used rarely. It adds a title to every element's content.
+          </li>
         </ul>
       </section>
       <section>
         <h2>
-          Bad value
+          Bad value: Don' t do this
         </h2>
 <pre>
-  <main>
-    <section>
-      <h2>
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;
         hello world
-      </h2>
-      <option value=""DUCK"">Duck</option>
-      <input type="TEXT" name="USERNAME">
-    </section>
-  </main>
+      &lt;/h2&gt;
+      &lt;option value=""DUCK""&gt;Duck
+      &lt;input type="TEXT" name="USERNAME"&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
 </pre>        
       </section>
       <section>
         <h2>
-          good value
+          Good value: Do this
         </h2>
 <pre>
-  <main>
-    <section>
-      <h2>
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;h2&gt;
         Hello world
-      </h2>
-      <option value="duck">Duck</option>
-      <input type="text" name="username">
-    </section>
-  </main>
+      &lt;/h2&gt;
+      &lt;option value="duck"&gt;Duck
+      &lt;input type="text" name="username"&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
 </pre>        
       </section>
       
